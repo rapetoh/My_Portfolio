@@ -161,8 +161,8 @@ nav a:hover{
 
     /* Background and border colors */
     background-color: var(--bg1);
-    border: 2px solid var(--ecriture);
-    border-radius: 20px;
+    border: none;
+    box-shadow: var(--bg2);    border-radius: 20px;
     padding: 10px;
     transition: all 1s;
     /* Rotate it. Change the number of degrees for the following cards */
@@ -432,7 +432,8 @@ nav a:hover{
     
         /* Background and border colors */
         background-color: var(--bg1);
-        border: 2px solid var(--ecriture);
+        border: none;
+        box-shadow: var(--bg2);
         border-radius: 20px;
         padding: 10px;
         transition: all 1s;
