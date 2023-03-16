@@ -291,9 +291,6 @@ nav a:hover{
 
 
 @media screen and (max-width: 700px) {
-    *{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
     main{
         margin-top: 40px;
         margin-bottom: 40px;
