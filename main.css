@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --ecriture: #ffffff;
+    --bg1: #1f242d;
+    --bg2: 0 20PX 40px 0px rgb(0, 0, 0);
+    --bg3: rgb(23, 22, 22);
+    --coloraqua: aqua;
+}
+.reseaux{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.log{
+    width: 40px;
+}
+body{
+    background-color: var(--bg1);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 40px;
+    width: 80%;
+    height: 550px;
+    background-color: var(--bg1);
+    border-radius: 20px;
+    box-shadow: var(--bg2);
+}
+#myport{
+    margin-right: 230px;
+    font-size: large;
+}
+header{
+
+}
+.navbar a.active{
+    color: var(--coloraqua);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: var(--ecriture);
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 1s;
+}
+nav a:hover{
+    color: rgb(110, 180, 180);
+    transform: translateY(-4px);
+    transition: all 0.3s;
+}
+#corps{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#corps-droite{
+    padding-top: 105px;
+    color:var(--ecriture);
+}
+#corps-gauche{
+    
+}
+#roch{
+
+}
+.aqua{
+    color: var(--coloraqua);
+}
+#corps-about{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    padding-top: 90px;
+    color:var(--ecriture);
+}
+#corps-services{
+
+    padding-top: 150px;
+    color: var(--ecriture);
+
+}
+#corps-contact{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    padding-top: 130px;;
+    color:var(--ecriture);
+}
+#corps-contact form input{
+    transition: all 0.7s;
+}
+#corps-contact form input:hover{
+    box-shadow: 2px 10px 32px var(--bg2);
+    transform: scale(1.08);
+    transition: all 0.7s;
+}
+::placeholder{
+    text-align: center;
+}
+.stacked-cards {
+    /* Used to position the stacked cards */
+    position: relative;
+    border: 3px solid #d1d5db;
+    border-radius: 20px;
+    box-shadow: 2px 1px 12px var(--bg2);
+    transition: all 1.5s;
+    padding: 10px;
+    width: 270px;
+    margin-right: 50px;
+}
+.stacked-cards:hover {
+    /* Used to position the stacked cards */
+    position: relative;
+    border: 3px solid var(--ecriture);
+    border-radius: 20px;
+    box-shadow: 2px 1px 12px rgb(110, 180, 180);
+    color: var(--coloraqua);
+    transform: scale(1.06);
+    transition: all 0.7s;
+}
+.stacked-cards__card {
+    /* Absolute position */
+    left: 0px;
+    position: relative;
+    top: 0px;
+
+    /* Take full size */
+    width: 470px;
+
+    /* Displayed under the container */
+    z-index: 1;
+
+    /* Background and border colors */
+    background-color: var(--bg1);
+    border: 2px solid var(--ecriture);
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 1s;
+    /* Rotate it. Change the number of degrees for the following cards */
+
+
+}
+.stacked-cards__card:hover{
+    transform: scale(1.04);
+    transition: all 0.6s;
+    color: var(--coloraqua);
+
+
+}
+.logo{
+    width: 20px;
+}
+.corps-realizations{
+    padding: 40px;
+    padding-top: 140px;
+    color:var(--ecriture);
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    margin: auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    scroll-padding: 24px;
+    gap: 12px;
+    width: 1000px;
+    height: 300px;
+}
+.container .item{
+    flex: 0 0 100%;
+    max-width: 500px;
+    scroll-snap-align: start;
+}
+/* Cible la barre de défilement */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px; /* Largeur de la barre de défilement */
+    scrollbar-width: thin;
+  }
+  
+  /* Cible la poignée de la barre de défilement */
+  ::-webkit-scrollbar-thumb {
+    height: 2px;
+    background-color: var(--coloraqua); /* Couleur de la poignée */
+    border-radius: 24px; /* Bordure arrondie de la poignée */
+  }
+  
+  /* Cible la piste de la barre de défilement */
+  ::-webkit-scrollbar-track {
+    background-color: #2a374e; /* Couleur de la piste */
+  }
+  
+  /* Cible le coin entre la piste et la poignée de la barre de défilement */
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; /* Couleur du coin */
+  }
+  /* Cible la barre de défilement dans Firefox */
+  .imgrealiz{
+    width: 470px; 
+    border-radius: 18px;
+  }
+
+  .diaporama{
+    position: relative;
+    border: 0px solid black;
+    background-image: url('images/Capture\ d\'écran\ 2023-03-10\ 122454.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 220px;
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;    
+    transition: all 1s;
+}
+@keyframes diapo1 {
+    0%{ background-image:url('images/Capture\ d\'écran\ 2023-03-10\ 122454.png'); }
+    75%{background-image:url('images/Capture\ d\'écran\ 2023-03-10\ 122359.png');}
+}
+@media screen and (max-width: 990px) {
+    
+}
+.radio-switch{
+    background-color: #636363;
+    border-radius: 9999px;
+    display: inline-flex;
+    padding: 0.25rem;
+    height: 12px; 
+    transition: all 0.5s;    
+}
+.radio-switch:hover{
+    transform: scale(1.15);
+    transition: all 0.5s;    
+}
+#dark-night-hov:hover{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+#dark-night-hov{
+    border-radius: 999px;
+    background-color: var(--ecriture);
+    width: 30px;
+    transition: all 0.5s; 
+}
+.radio-switch_label{
+    border-radius: 9999px;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px; background-color: var(--ecriture); width: 30px; 
+}
+.radio-switch_label-selected{
+    background-color: #3b82f6;
+    color: #fff;
+}
+.radio-switch_input{
+    display: none;
+}
+.clickhere{
+    background-color: var(--coloraqua);
+    border-radius: 20px; 
+    width: 220px; 
+    height: 100px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    main{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 40px;
+        width: 40%;
+        height: 85%;
+        background-color: var(--bg1);
+        border-radius: 20px;
+        box-shadow: var(--bg2);
+    }
+    nav{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #myport{
+        margin-right: 0px;
+        font-size: x-small;
+    }
+    nav a{
+        text-decoration: none;
+        color: var(--ecriture);
+        font-weight: bold;
+        font-size: 9px;
+        transition: all 1s;
+    }
+    .radio-switch{
+        background-color: #636363;
+        border-radius: 9999px;
+        display: inline-flex;
+        padding: 0.25rem;
+        height: 7px; 
+        width: 15px;
+    }
+    #dark-night-hov{
+        border-radius: 999px;
+        background-color: var(--ecriture);
+        width: 10px; 
+    }
+    #corps{
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+    }
+    #corps-droite{
+        padding-top: 0px;
+        text-align: center;
+    }
+    #corps-gauche{
+        
+    }
+    #roch{
+        width: 300px;
+        position: relative;
+        right: 95px;
+    }
+    #corps-about{
+        position: relative;
+        right: 12px;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        padding: 40px;
+        padding-top: 20px;
+        padding-bottom: 90px;
+        color:var(--ecriture);
+    }
+    .container{
+        margin: auto;
+        display: flex;
+        flex-direction: column; /* Ajout d'une colonne pour aligner les éléments verticalement */
+        overflow-y: scroll; /* Modification de overflow-x à overflow-y */
+        gap: 12px;
+        width: 200px;
+        height: 300px;
+        overflow-x: hidden;
+      }
+      
+      .container .item{
+        flex: 0 0 100%;
+        max-width: 500px;
+        position: relative;
+        right: -11px;
+      }
+      .stacked-cards__card {
+        align-items: center;
+        /* Absolute position */
+        left: 0px;
+        position: relative;
+        top: 0px;
+    
+        /* Take full size */
+        width: 130px;
+    
+        /* Displayed under the container */
+        z-index: 1;
+    
+        /* Background and border colors */
+        background-color: var(--bg1);
+        border: 2px solid var(--ecriture);
+        border-radius: 20px;
+        padding: 10px;
+        transition: all 1s;
+        /* Rotate it. Change the number of degrees for the following cards */
+    
+    
+    }
+    .stacked-cards__card:hover{
+        transform: scaleX(0.94);
+        transition: all 0.6s;
+        color: var(--coloraqua);
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent; /* Couleur de la piste */
+      }
+      #corps-services{
+        padding-top: 100px;
+        color: var(--ecriture);
+    }
+    .imgrealiz{
+        width: 130px; 
+        border-radius: 18px;
+      }
+      .corps-realizations{
+        position: relative;
+        right: 35px;
+        padding-top: 140px;
+        color:var(--ecriture);
+        display: flex;
+        justify-content: space-between;
+    }
+    .diaporama{
+        position: relative;
+        border: 0px solid black;
+        background-image: url('images/Capture\ d\'écran\ 2023-03-10\ 122454.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 70px;
+        -webkit-animation-name: diapo1;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;    
+        transition: all 1s;
+    }
+    @keyframes diapo1 {
+        0%{ background-image:url('images/Capture\ d\'écran\ 2023-03-10\ 122454.png'); }
+        75%{background-image:url('images/Capture\ d\'écran\ 2023-03-10\ 122359.png');}
+    }
+    .clickhere{
+        background-color: var(--coloraqua);
+        border-radius: 20px; 
+        width: 120px; 
+        height: 100px;
+        position: relative;
+        right: 14px;
+    }
+    .radio-switch:hover{
+        transform: scale(1.5);
+        transition: all 0.5s;    
+    }
+    #dark-night-hov:hover{
+        transform: scale(1.05);
+        transition: all 0.5s;
+    }
+    
+
+}

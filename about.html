@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <a id="myport"> MY <span class="aqua">PORTFOLIO</span> </a><br>
+                <a href="main.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="services.html">Services</a><br>
+                <a href="realizations.html">Realizations</a><br>
+                <a href="contact.html">Contact</a><br>
+                <div class="radio-switch" >
+                    <label id="dark-night-hov" class="radio-switch_label radio-switch_label-selected">
+                        <input type="radio" aria-placeholder="dark" class="radio-switch_input changeTheme">
+                    </label>
+                     
+                </div>
+            </nav>
+            <div id="corps-about">
+                <h3><p> <span class="aqua">Web development</span>  and computer engineering are more than just professions - they are means to bring our boldest ideas to life. As a web developer and <span class="aqua">computer engineer</span>, I take pride in contributing to shaping the digital world we live in. To me, every line of code is an invitation to explore <span class="aqua">new possibilities</span>, to push the boundaries of what is considered possible, and to create innovative solutions that improve people's lives. My <span class="aqua">portfolio</span> is a showcase of my achievements and my passion for technology. I believe that technology has the power to connect people. <span class="aqua">As you explore my work</span>, feel free to contact me if the experience enchants you.</p></h3>
+            </div>
+            
+        </header>
+
+    </main>
+    <div class="reseaux">
+        <a class="log" href="https://github.com/rapetoh"> <img class="log" src="images/github.png" alt=""></a>
+     </div>
+     <script>
+        const switchButton = document.querySelector('.changeTheme');
+let toggleTheme = localStorage.getItem('toggleTheme') || 1;
+
+if (toggleTheme === '0') {
+    document.documentElement.style.setProperty('--ecriture','#ffffff');
+    document.documentElement.style.setProperty('--bg1','#1f242d');
+    document.documentElement.style.setProperty('--bg2','0 20PX 40px 0px rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--bg3','rgb(23, 22, 22)');
+    document.documentElement.style.setProperty('--coloraqua','aqua');
+} else {
+    document.documentElement.style.setProperty('--ecriture','black');
+    document.documentElement.style.setProperty('--bg1','#adaaad');
+    document.documentElement.style.setProperty('--bg2','0 20PX 40px 0px rgb(48, 48, 48)');
+    document.documentElement.style.setProperty('--bg3','white');
+    document.documentElement.style.setProperty('--coloraqua','#257278');
+}
+
+switchButton.addEventListener('click', () => {
+    if (toggleTheme === '0') {
+        document.documentElement.style.setProperty('--ecriture','black');
+        document.documentElement.style.setProperty('--bg1','#adaaad');
+        document.documentElement.style.setProperty('--bg2','0 20PX 40px 0px rgb(48, 48, 48)');
+        document.documentElement.style.setProperty('--bg3','white');
+        document.documentElement.style.setProperty('--coloraqua','#257278');
+        toggleTheme = '1';
+    } else {
+        document.documentElement.style.setProperty('--ecriture','#ffffff');
+        document.documentElement.style.setProperty('--bg1','#1f242d');
+        document.documentElement.style.setProperty('--bg2','0 20PX 40px 0px rgb(0, 0, 0)');
+        document.documentElement.style.setProperty('--bg3','rgb(23, 22, 22)');
+        document.documentElement.style.setProperty('--coloraqua','aqua');
+        toggleTheme = '0';
+    }
+    localStorage.setItem('toggleTheme', toggleTheme);
+});
+
+</script>
+</body>
+</html>
