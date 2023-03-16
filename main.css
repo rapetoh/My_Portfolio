@@ -8,6 +8,7 @@
     --bg2: 0 20PX 40px 0px rgb(0, 0, 0);
     --bg3: rgb(23, 22, 22);
     --coloraqua: aqua;
+    --coloraqua1: rgb(0, 111, 111);
 }
 .reseaux{
     padding-bottom: 10px;
@@ -45,14 +46,20 @@ main{
 header{
 
 }
-.navbar a.active{
+nav a.active{
+    text-decoration: underline;
+    text-decoration-color: var(--coloraqua);
+    text-underline-offset: 10px;
     color: var(--coloraqua);
+    transform: translateY(-4px);
+    transition: all 0.3s;
 }
 nav{
     display: flex;
     justify-content: space-between;
 }
 nav a{
+    padding: 10px;
     text-decoration: none;
     color: var(--ecriture);
     font-weight: bold;
@@ -60,10 +67,14 @@ nav a{
     transition: all 1s;
 }
 nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--coloraqua);
+    text-underline-offset: 10px;
     color: rgb(110, 180, 180);
     transform: translateY(-4px);
     transition: all 0.3s;
 }
+
 #corps{
     padding: 40px;
     display: flex;
@@ -242,6 +253,7 @@ nav a:hover{
     
 }
 .radio-switch{
+    margin-top: 10px;
     background-color: #636363;
     border-radius: 9999px;
     display: inline-flex;
@@ -291,13 +303,16 @@ nav a:hover{
 
 
 @media screen and (max-width: 700px) {
+    body{
+        padding: auto;
+    }
     main{
         margin-top: 40px;
         margin-bottom: 40px;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 40px;
-        width: 40%;
+        width: 65%;
         height: 85%;
         background-color: var(--bg1);
         border-radius: 20px;
@@ -313,12 +328,26 @@ nav a:hover{
         margin-right: 0px;
         font-size: x-small;
     }
+    .bouton{
+        background-color: var(--coloraqua1);
+        border-radius: 20px;
+        box-shadow: 0 20PX 40px 0px rgb(58, 58, 58);
+    }
     nav a{
+        padding: 10px;
         text-decoration: none;
         color: var(--ecriture);
         font-weight: bold;
         font-size: 9px;
         transition: all 1s;
+    }
+    nav a.active{
+        text-decoration: none;
+        text-decoration-color: var(--coloraqua);
+        text-underline-offset: 10px;
+        color: rgb(125, 229, 229);
+        transform: translateY(-4px);
+        transition: all 0.3s;
     }
     .radio-switch{
         background-color: #636363;
@@ -334,32 +363,40 @@ nav a:hover{
         width: 10px; 
     }
     #corps{
+        padding-right: 0px;
+        padding-left: 0px;
         display: flex;
         flex-direction: column;
-        padding: 60px;
+        font-size: small;
     }
     #corps-droite{
+        padding-right: 0px;
+        padding-left: 0px;
         padding-top: 0px;
         text-align: center;
+        font-size: x-small;
     }
     #corps-gauche{
-        
+        margin: auto;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     #roch{
-        width: 300px;
-        position: relative;
-        right: 95px;
+        margin: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 270px;        
     }
     #corps-about{
-        position: relative;
-        right: 12px;
+
         text-align: center;
         display: grid;
         place-items: center;
-        padding: 40px;
+        padding: 10px;
         padding-top: 20px;
         padding-bottom: 90px;
         color:var(--ecriture);
+        font-size: x-small;
     }
     .container{
         margin: auto;
@@ -384,9 +421,11 @@ nav a:hover{
         left: 0px;
         position: relative;
         top: 0px;
+        font-size: x-small;
+        
     
         /* Take full size */
-        width: 130px;
+        width: 140px;
     
         /* Displayed under the container */
         z-index: 1;
@@ -410,17 +449,24 @@ nav a:hover{
         background-color: transparent; /* Couleur de la piste */
       }
       #corps-services{
-        padding-top: 100px;
+        position: relative;
+        right: 7px;
+        padding-top: 0px;
         color: var(--ecriture);
+        align-items: center;
+    }
+    .frameimgrealiz{
+        width: 190px;
     }
     .imgrealiz{
-        width: 130px; 
+        padding-top: 0px;
+        width: 190px; 
         border-radius: 18px;
-      }
+    }
       .corps-realizations{
         position: relative;
-        right: 35px;
-        padding-top: 140px;
+        right: 18px;
+        padding-top: 0px;
         color:var(--ecriture);
         display: flex;
         justify-content: space-between;
@@ -431,10 +477,10 @@ nav a:hover{
         background-image: url('images/Capture\ d\'écran\ 2023-03-10\ 122454.png');
         background-size: cover;
         background-repeat: no-repeat;
-        width: 130px;
-        height: 70px;
+        width: 190px;
+        height: 100px;
         -webkit-animation-name: diapo1;
-        -webkit-animation-duration: 5s;
+        -webkit-animation-duration: 3s;
         -webkit-animation-timing-function: ease-in-out;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-direction: normal;    
@@ -449,8 +495,9 @@ nav a:hover{
         border-radius: 20px; 
         width: 120px; 
         height: 100px;
-        position: relative;
-        right: 14px;
+    }
+    .radio-switch{
+        width: 24px;
     }
     .radio-switch:hover{
         transform: scale(1.5);
@@ -460,6 +507,11 @@ nav a:hover{
         transform: scale(1.05);
         transition: all 0.5s;
     }
-    
+    .log{
+        width: 35px;
+    }
+    #corps-contact{
+        padding-top: 0px;
+    }
 
 }
